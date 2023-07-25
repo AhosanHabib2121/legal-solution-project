@@ -34,7 +34,7 @@
       .poppins-font {
         font-family: 'Poppins', sans-serif;
       }
-      .eb-garamond-font{
+      .eb-garamond-font {
         font-family: 'EB Garamond', serif;
       }
     </style>
@@ -48,6 +48,9 @@
               'button-bg-color': '#B68C5A',
               'title-text-color': '#414040',
             },
+            backgroundImage: {
+              'hero-banner-photo': "url('./images/banner.png')",
+            },
           },
         },
       }
@@ -55,7 +58,7 @@
   </head>
   <body>
     <!-- header section here -->
-    <header class="container mx-auto px-5">
+    <header class="container mx-auto md:px-7 lg-5">
       <!-- nav section here -->
       <nav class="py-8">
         <div class="navbar">
@@ -184,10 +187,32 @@
           </div>
           <!-- button area -->
           <div class="navbar-end">
-            <a class="btn bg-button-bg-color text-white poppins-font text-lg font-semibold normal-case hover:bg-orange-900">Free Consultation</a>
+            <a
+              class="btn bg-button-bg-color text-white poppins-font text-lg font-semibold normal-case hover:bg-orange-900"
+            >
+              Free Consultation
+            </a>
           </div>
         </div>
       </nav>
+      <!-- banner section here -->
+      <section class="mx-2">
+        <div class="hero min-h-[calc(100vh-128px)] bg-hero-banner-photo" >
+          <div class="hero-overlay bg-opacity-30"></div>
+          <div class="text-center text-neutral-content py-24">
+            <div class="max-w-lg md:max-w-2xl">
+              <h1 class="mb-5 text-6xl font-extrabold eb-garamond-font text-white">We Provide Effective Legal Solutions</h1>
+              <p class="mb-5 text-white text-base font-normal">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+              </p>
+              <div class="space-y-4">
+                    <input type="text" class="py-4 pr-36 md:pr-52 mr-5 rounded-xl text-center" placeholder="Search your services">
+                    <button class="rounded-xl py-4  px-8 poppins-font  border-spacing-0 normal-case text-white bg-button-bg-color border-none hover:bg-orange-900 text-base font-semibold">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main section here -->
     <main class="container mx-auto px-5"></main>
